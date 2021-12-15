@@ -24,3 +24,23 @@ for (const key in object){
         const element = object[key];
     }
 }
+
+
+//ForEch
+nombrePlanetas.forEach((value, index, array)=> {
+    console.log('planeta', index, value)
+});
+
+
+//Map
+nombrePlanetas.map(()=>{
+    return(
+        console.log('El planeta ${planetas} tiene tamaño de  :${tamaño[index]}')
+    )
+});
+
+let resultadoMap = nombrePlanetas.map((planetas, index)=> {
+    return ('El planeta ${planetas} tiene tamaño de  :${tamaño[index]}')
+})
+
+console.log(resultadoMap)
