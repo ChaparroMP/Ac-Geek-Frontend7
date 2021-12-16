@@ -15,111 +15,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Planetas</title>
+    <title>Planetas || AG - ChaparroMP Geek</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./img/solar-system.png">
 
 </head>
 
 <!-- ///////////// BODY ///////////////-->
 
 <body>
-    <h1>Sistema Solar</h1>
-    <h1>Sistema Solar</h1>
-    <table>
-        <thead>
-            <tr>
-                <th> # de Planeta </th>
-                <th> Planeta </th>
-                <th> Distancia en UA [unidades astronómicas] <a
-                        href="http://recursostic.educacion.es/secundaria/edad/1esobiologia/1quincena3/1quincena3_contenidos_3a.htm#:~:text=Expresadas%20en%20ua%2C%20las%20distancias,son%2C%20aproximadamente%2C%20150000000%20km.">(1)</a>
-                </th>
-                <th> Tamaño [Radio en Km] <a
-                        href="http://www.sc.ehu.es/sbweb/ocw-fisica/celeste/solar/sistema_solar.xhtml">(2)</a> </th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Planet 1-->
-            <tr>
-                <td> <input type="number" id="n_planet_1" class="planet1_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_1" class="planet1_planet_name"> </td>
-                <td> <input type="number" id="d_planet_1" class="planet1_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_1" class="planet1_planet_size"> </td>
-            </tr>
-            <!-- Planet 2-->
-            <tr>
-                <td> <input type="number" id="n_planet_2" class="planet2_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_2" class="planet2_planet_name"> </td>
-                <td> <input type="number" id="d_planet_2" class="planet2_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_2" class="planet2_planet_size"> </td>
-            </tr>
-            <!-- Planet 3-->
-            <tr>
-                <td> <input type="number" id="n_planet_3" class="planet3_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_3" class="planet3_planet_name"> </td>
-                <td> <input type="number" id="d_planet_3" class="planet3_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_3" class="planet3_planet_size"> </td>
-            </tr>
-            <!-- Planet 4-->
-            <tr>
-                <td> <input type="number" id="n_planet_4" class="planet4_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_4" class="planet4_planet_name"> </td>
-                <td> <input type="number" id="d_planet_4" class="planet4_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_4" class="planet4_planet_size"> </td>
-            </tr>
-
-            <!-- Planet 5-->
-            <tr>
-                <td> <input type="number" id="n_planet_5" class="planet5_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_5" class="planet5_planet_name"> </td>
-                <td> <input type="number" id="d_planet_5" class="planet5_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_5" class="planet5_planet_size"> </td>
-            </tr>
-
-            <!-- Planet 6-->
-            <tr>
-                <td> <input type="number" id="n_planet_6" class="planet6_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_6" class="planet6_planet_name"> </td>
-                <td> <input type="number" id="d_planet_6" class="planet6_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_6" class="planet6_planet_size"> </td>
-            </tr>
-
-            <!-- Planet 7-->
-            <tr>
-                <td> <input type="number" id="n_planet_7" class="planet7_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_7" class="planet7_planet_name"> </td>
-                <td> <input type="number" id="d_planet_7" class="planet7_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_7" class="planet7_planet_size"> </td>
-            </tr>
-            <!-- Planet 8-->
-            <tr>
-                <td> <input type="number" id="n_planet_8" class="planet8_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_8" class="planet8_planet_name"> </td>
-                <td> <input type="number" id="d_planet_8" class="planet8_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_8" class="planet8_planet_size"> </td>
-            </tr>
-
-            <!-- Planet 9-->
-            <tr>
-                <td> <input type="number" id="n_planet_9" class="planet9_planet_numeration"> </td>
-                <td> <input type="text" id="np_planet_9" class="planet9_planet_name"> </td>
-                <td> <input type="number" id="d_planet_9" class="planet9_planet_distance"> </td>
-                <td> <input type="number" id="t_planet_9" class="planet9_planet_size"> </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="content_text">
+        <h1 id="principal_title">Ejercicio sobre los planetas</h1>
+    </div>
 
     <!-- Botones-->
     <div class="container">
         <button id="btn_send_evaluation" class="item"> Enviar </button>
         <button id="btn_sort_values" class="item"> Ordenar Valores </button>
         <button id="btn_filter_distance" class="item"> Filtrar </button>
+
+
         <button id="btn_search_planet" class="item"> Buscar </button>
     </div>
 
+    <!-- Tabla de información de los planetas-->
+    <div class="table1-container">
+        <table id="table_planet_info-card">
+            <thead>
+                <tr>
+                    <th> # de Planeta </th>
+                    <th> Planeta </th>
+                    <th> Distancia en UA <br> [unidades <br> astronómicas] <a
+                            href="http://recursostic.educacion.es/secundaria/edad/1esobiologia/1quincena3/1quincena3_contenidos_3a.htm#:~:text=Expresadas%20en%20ua%2C%20las%20distancias,son%2C%20aproximadamente%2C%20150000000%20km.">(1)</a>
+                    </th>
+                    <th> Tamaño <br> [radio en Km] <a
+                            href="http://www.sc.ehu.es/sbweb/ocw-fisica/celeste/solar/sistema_solar.xhtml">(2)</a> </th>
+                </tr>
+            </thead>
+            <tbody id="bodyTable1">
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Footer -->
     <footer>
-        <p>Ejercicio Planetas- Academia Geek | Frontend 7</p>
-        <p> Realizado por: Pilar Chaparro M.</p>
-        <p> 2021</p>
+        <div class="content">
+            <div class="left box">
+                <p>Ejercicio Planetas- Academia Geek | Frontend 7 <br> Realizado por: Pilar Chaparro M. <br> 2021 </p>
+            </div>
+
+            <div class="right box">
+                <p>Imágenes de fondo | Disponibles en: <a href='https://www.freepik.es/vectores/fondo'> (3)</a></p>
+
+            </div>
+        </div>
     </footer>
+
 
     <script src="./script/planets.js"></script>
 </body>
