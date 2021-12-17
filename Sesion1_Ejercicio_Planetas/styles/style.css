@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --violet: #bf7ccc;
+    --beige: beige;
+}
+
+body {  
+    background-image: url("https://image.freepik.com/vector-gratis/doodle-acuarela-galaxia-colorida-sobre-fondo-pastel_53876-100913.jpg"); 
+    background-color:var(--violet); 
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.content_text{
+    margin: 15px;
+    text-align: center;
+}
+
+#principal_title{
+    font-family: "Cinzel";
+    background-color:var(--beige); 
+    display: inline-block;
+    
+}
+
+/* Estilo para el footer */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -9999;
+    left: 0;
+    background-color: #4b4daae3;
+}
+
+footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .content .right {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .content .right  a{
+   color: #490c49e3;
+   font-weight: bold;
+}
+
+
+footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+}
+
+@media (max-width:560px){
+    footer{
+      position: relative;
+      margin-top: 5vh;
+    }
+    footer .content .box{
+      width: 100%;
+    }
+    
+}
+
+/* Estilo para los botones */
+.item{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#btn_send_evaluation{
+    float:right;
+}
+
+/*Estilo para la tabla*/
+.table1-container{
+    margin: 20px ;
+    width: 55vw;
+}
+
+table{
+    background-color: var(--beige); 
+    width: 100%; 
+    padding-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#table_planet_info-card td,th{
+    padding: 5px;
+    vertical-align: center;
+    border-spacing: 0;
+    border: 1px solid #000;
+}
+
+#table_planet_info-card thead{
+    background-color: cadetblue;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+
+
+#table_planet_info-card tr:nth-child(even){
+    background-color: rgba(138, 158, 202, 0.616);
+}
+
+
+#table_planet_info-card td:nth-child(1){
+    text-align: center; 
+    width: 10%;
+}
+#table_planet_info-card td:nth-child(2){
+    width: 25%;
+}
+
+#table_planet_info-card td:nth-child(3),td:nth-child(4){
+    text-align: right; 
+    width: 32%;
+}
+
