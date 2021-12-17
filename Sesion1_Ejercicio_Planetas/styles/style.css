@@ -34,10 +34,11 @@ body {
 /* Estilo para el footer */
 footer{
     width: 100%;
+    position: fixed;
     bottom: 0;
+    z-index: -9999;
     left: 0;
     background-color: #4b4daae3;
-    position: absolute;
 }
 
 footer .content{
@@ -50,7 +51,6 @@ footer .content{
 }
 
 footer .content .right {
-    display: inline-block;
     text-align: right;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -70,10 +70,10 @@ footer .content .box{
 @media (max-width:560px){
     footer{
       position: relative;
+      margin-top: 5vh;
     }
     footer .content .box{
       width: 100%;
-      margin-top: 30px;
     }
     
 }
@@ -91,24 +91,21 @@ footer .content .box{
 /*Estilo para la tabla*/
 .table1-container{
     margin: 20px ;
-    width: 80vw;
+    width: 55vw;
 }
 
 table{
     background-color: var(--beige); 
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; 
     padding-bottom: 20px;
-
-}
-
-tbody{
     border-collapse: collapse;
-
 }
 
 #table_planet_info-card td,th{
-    padding: 4px;
+    padding: 5px;
+    vertical-align: center;
+    border-spacing: 0;
+    border: 1px solid #000;
 }
 
 #table_planet_info-card thead{
@@ -117,6 +114,8 @@ tbody{
     border-bottom: 5px solid black;
 }
 
+
+
 #table_planet_info-card tr:nth-child(even){
     background-color: rgba(138, 158, 202, 0.616);
 }
@@ -124,9 +123,14 @@ tbody{
 
 #table_planet_info-card td:nth-child(1){
     text-align: center; 
+    width: 10%;
+}
+#table_planet_info-card td:nth-child(2){
+    width: 25%;
 }
 
 #table_planet_info-card td:nth-child(3),td:nth-child(4){
     text-align: right; 
+    width: 32%;
 }
 
